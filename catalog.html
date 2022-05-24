@@ -115,10 +115,39 @@
               </li>
           </ul>
         </fieldset>
+        <div class="price">
+          <label for="price">Стоимость, ₽:</label>
+          <input type="range" id="dayscount" name="dayscount" min="1" max="9000" step="1">
+        </div>
+        <div class="buttons">
+          <input type="button" value="ПРИМЕНИТЬ" autofocus>
+          <input type="button" value="Сбросить">
+        </div>
+      </section>
+      <section class="catalog-hotels">
+        <div class="sorting-hotels">
+          <div class="found-hotels-number">
+            <h2>Найдено гостиниц: 38</h2>
+          </div>
+          <select class="select-control" aria-label="Сортировка">
+            <option value="cheap">Сначала дешёвые</option>
+          </select>
+          <a class="button" href="#">
+            <span class="visually-hidden">Показать карточки</span>
+          </a>
+          <a class="button button-light" href="#">
+            <span class="visually-hidden">Показать слайд</span>
+          </a>
+          <a class="button button-light" href="#">
+            <span class="visually-hidden">Показать список</span>
+          </a>
+        </div>
+        <ul class="catalog-hotels-list">
+          <li class="catalog-hotels-card">
 
 
-
-
+          </li>
+        </ul>
       </section>
 
 
