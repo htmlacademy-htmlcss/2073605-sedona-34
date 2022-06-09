@@ -1,62 +1,66 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="styles/styles.css">
-  </head>
-  <body>
-    <header class="main-header">
-      <nav class="main-navigation">
-        <section class="logo-sedona">
-          <h2 class="visually-hidden">Логотип Седоны</h2>
-          <a class="logosedona" href="#">
-            <img class="logo-sedona" src="images/logo-sedona.svg" width="139" height="70" alt="Логотип сайта городка Седона.">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+  <header class="main-header">
+    <nav class="main-navigation">
+      <section class="logo-sedona">
+        <h2 class="visually-hidden">Логотип Седоны</h2>
+        <a class="logosedona" href="#">
+          <img src="images/logo-sedona.svg" width="139" height="70" alt="Логотип сайта городка Седона.">
+        </a>
+      </section>
+      <ul class="navigation-list">
+        <li class="navigation-item">
+          <a class="navigation-link" href="index.html">
+            Главная
           </a>
-        </section>
-        <ul class="navigation-list">
-          <li class="navigation-item">
-            <a class="navigation-link" href="index.html">
-              Главная
-            </a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">
-              О Седоне
-            </a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="catalog.html">
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">
+            О Седоне
+          </a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="catalog.html">
             Гостиницы
           </a>
-          </li>
-        </ul>
-        <ul class="navigation-user">
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">
-              <span class="visually-hidden">
-                Поиск
-              </span>
-            </a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">
-              <span class="visually-hidden">
-                Избранное
-              </span>
-            </a>
-          </li>
-          <li class="navigation-item">
-            <a class="button" href="#">Хочу сюда</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main>
+        </li>
+      </ul>
+      <ul class="navigation-list navigation-user">
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">
+            <span class="visually-hidden">
+              Поиск
+            </span>
+          </a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">
+            <span class="visually-hidden">
+              Избранное
+            </span>
+          </a>
+        </li>
+        <li class="navigation-item">
+          <a class="button" href="#">Хочу сюда</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main-container main-index">
+    <div class="page-container">
       <section class="sedona-town">
         <div class="main-image">
-         <h1 class="visually-hidden">Sedona</h1>
-         <img class="logo" src="images/welcome.svg" width="458" height="352" alt="Добро пожаловать в великолепную Седону. Потому что Гранд каньон отстой.">
+          <h1 class="visually-hidden">Sedona</h1>
+          <img class="logo" src="images/welcome.svg" width="458" height="352"
+            alt="Добро пожаловать в великолепную Седону. Потому что Гранд каньон отстой.">
         </div>
         <div class="reasons">
           <p class="sedona-reasons">
@@ -124,7 +128,7 @@
               Небольшая<br> площадь
             </h2>
             <p class="item">
-            — №3 —
+              — №3 —
             </p>
             <p class="item-text">
               Все достопримечательности находятся очень близко
@@ -175,8 +179,10 @@
           <button class="button newsletter-button" type="submit">Подписаться</button>
         </form>
       </section>
-    </main>
-    <footer class="page-footer">
+    </div>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer-container">
       <section class="footer-social">
         <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="footer-social-list">
@@ -199,7 +205,7 @@
       </section>
       <section class="footer-contacts">
         <h2 class="visually-hidden">Телефон</h2>
-          <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
       </section>
       <section class="logo-academy">
         <h2 class="visually-hidden">Логотип академии</h2>
@@ -207,6 +213,8 @@
           <img class="logo-htmlacademy" src="images/logo-academy.svg" width="115" height="34" alt="Сайт HTML академии.">
         </a>
       </section>
-    </footer>
-  </body>
+    </div>
+  </footer>
+</body>
+
 </html>
