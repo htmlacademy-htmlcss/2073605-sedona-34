@@ -35,8 +35,10 @@ html {
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
+  padding: 0;
   display: flex;
+  width: 1280px;
   flex-direction: column;
   min-height: 100%;
   font-family: "PT Sans", sans-serif;
@@ -138,11 +140,6 @@ body {
   margin: 0 auto;
 }
 
-.feature-list {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .sedona-reasons {
   font-weight: 700;
   font-size: 30px;
@@ -155,9 +152,38 @@ body {
   color: #333333;
 }
 
+.feature-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.feature-item {
+  padding: 102px 85px;
+  width: 400px;
+  box-sizing: border-box;
+}
+
 .reality-list {
   display: flex;
+  padding: 0;
   list-style-type: none;
+}
+
+.reality-item {
+  padding: 80px 85px;
+  width: 400px;
+  box-sizing: border-box;
+}
+
+.reality-town {
+  flex-basis: 100%;
+}
+
+.devil-bridge {
+  flex-basis: 100%;
 }
 
 .item-name {
@@ -193,8 +219,11 @@ body {
   text-align: center;
   color: #333333;
 }
-
+.search-hotel{
+  padding: 91px 304px 93px;
+}
 .interested {
+  margin: 0;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -203,10 +232,17 @@ body {
 }
 
 .arrival-date {
+  margin: 29px 0 56px;
+  text-align: center;
   color: #333333;
 }
 
 .button-search {
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  padding: 12px 15px;
+  width: 544px;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -217,6 +253,7 @@ body {
 }
 
 .subscription {
+  padding: 94px 200px;
   background-color: #c0b0b0;
   background-image: url("../images/background-sudscription.jpg");
   background-size: 100% auto;
@@ -227,11 +264,13 @@ body {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
+  text-align: center;
   text-transform: uppercase;
   color: #ffffff;
 }
 
 .newsletter-text {
+  text-align: center;
   color: #ffffff;
 }
 
