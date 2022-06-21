@@ -73,9 +73,9 @@
             <a class="breadcrumbs-link">Гостиницы</a>
           </li>
         </ul>
-        <div class="catalog-filter">
-          <form action="https://echo.htmlacademy.ru/" method="get">
-            <fieldset class="catalog-filter-group">
+        <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+          <div class="type-hotel">
+            <fieldset class="catalog-filter-group infrastructure">
               <legend class="catalog-filter-title">Инфраструктура:</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
@@ -121,6 +121,8 @@
                 </li>
               </ul>
             </fieldset>
+          </div>
+          <div class="control-buttons">
             <div class="price">
               <div class="dayscount">
                 Стоимость, ₽:
@@ -138,8 +140,8 @@
               <button class="apply" type="submit" autofocus>Применить</button>
               <button class="reset" type="reset">Сбросить</button>
             </div>
-          </form>
-        </div>
+          </div>
+        </form>
       </section>
       <section class="catalog-hotels">
         <div class="sorting-hotels">
@@ -238,41 +240,43 @@
           </li>
         </ul>
       </section>
-      <ul class="pagination">
-        <li class="pagination-item">
-          <a class="pagination-link pagination-current">1</a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link" href="#">2</a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link" href="#">3</a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link" href="#">4</a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link" href="#">...</a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link" href="#">10</a>
-        </li>
-      </ul>
-      <div class="number-hotels-of-pages">
-        <span class="hotels-of-pages">Гостиниц на странице:</span>
-        <select class="select-control" aria-label="Гостиниц на странице:">
-          <option value="number">4</option>
-        </select>
+      <div class="number-pages">
+        <ul class="pagination">
+          <li class="pagination-item">
+            <a class="pagination-link pagination-current">1</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">2</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">3</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">4</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">...</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">10</a>
+          </li>
+        </ul>
+        <div class="number-hotels-of-pages">
+          <span class="hotels-of-pages">Гостиниц на странице:</span>
+          <select class="select-control" aria-label="Гостиниц на странице:">
+            <option value="number">4</option>
+          </select>
+        </div>
       </div>
-      <section class="subscription-catalog">
-        <h2 class="newsletter-catalog">
+      <section class="subscription">
+        <h2 class="newsletter newsletter-catalog">
           Подпишитесь на рассылку
         </h2>
-        <p class="newsletter-text-catalog">
-          Только полезная информация и никакого спама, честное бойскаутское!
+        <p class="newsletter-text newsletter-text-catalog">
+          Только полезная информация и никакого спама,<br> честное бойскаутское!
         </p>
-        <form class="newsletter-form" action="https://echo.htmlacademy.ru" method="post">
-          <input type="email" name="newsletter-email" id="newsletter-email" placeholder="Ваш e-mail" required>
+        <form  class="newsletter-form" action="https://echo.htmlacademy.ru" method="post">
+          <input class="newsletter-mail newsletter-mail-catalog" type="email" name="newsletter-email" id="newsletter-email" placeholder="Ваш e-mail" required>
           <button class="button newsletter-button" type="submit">Подписаться</button>
         </form>
       </section>

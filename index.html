@@ -73,17 +73,23 @@
       </section>
       <section class="feature">
         <ol class="feature-list">
-          <li class="feature-item reality-town">
-            <h2 class="item-name">
-              Настоящий<br> городок
-            </h2>
-            <p class="item">
-              — №1 —
-            </p>
-            <p class="item-text">
-              Седона — не аттракцион для<br> туристов, там течет своя<br> жизнь
-            </p>
-            <img src="images/street-sedona.jpg" width="800" height="384" alt="Улица Седоны.">
+          <li class="feature-item">
+            <div class="reality-town">
+              <div class="reality-town-item">
+                <h2 class="item-name">
+                  Настоящий<br> городок
+                </h2>
+                <p class="item">
+                  — №1 —
+                </p>
+                <p class="item-text">
+                  Седона — не аттракцион для<br> туристов, там течет своя<br> жизнь
+                </p>
+              </div>
+              <div class="town-image">
+                <img src="images/street-sedona.jpg" width="800" height="384" alt="Улица Седоны.">
+              </div>
+            </div>
             <ul class="reality-list">
               <li class="reality-item">
                 <h3 class="reality-item-name">
@@ -167,7 +173,7 @@
         </p>
         <a class="button button-search" href="#">ПОИСК ГОСТИНИЦЫ В седоне</a>
       </section>
-      <section class="subscription">
+      <section class="subscription subscription-main">
         <h2 class="newsletter">
           Подпишитесь на рассылку
         </h2>
@@ -175,7 +181,8 @@
           Только полезная информация и никакого спама,<br> честное бойскаутское!
         </p>
         <form class="newsletter-form" action="#" method="post">
-          <input type="email" name="newsletter-email" id="newsletter-email" placeholder="Ваш e-mail" required>
+          <input class="newsletter-mail" type="email" name="newsletter-email" id="newsletter-email"
+            placeholder="Ваш e-mail" required>
           <button class="button newsletter-button" type="submit">Подписаться</button>
         </form>
       </section>
