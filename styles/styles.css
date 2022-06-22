@@ -95,7 +95,7 @@ body {
 
 .navigation-link {
   display: block;
-  margin: 20px 17px;
+  padding: 20px 17px;
   font-weight: 700;
   font-size: 20px;
   color: #000000;
@@ -103,8 +103,8 @@ body {
 }
 
 .navigation-user .navigation-link {
-  min-width: 16px;
-  min-height: 22px;
+  width: 18px;
+  height: 18px;
 }
 
 .navigation-item .button {
@@ -139,9 +139,12 @@ body {
 .logo {
   display: block;
   margin: 0 auto;
+  padding-top: 51px;
+  padding-bottom: 82px;
 }
 
 .sedona-reasons {
+  margin: 63px auto 31px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -150,18 +153,70 @@ body {
 }
 
 .reasons-five {
+  margin-bottom: 90px;
+  text-align: center;
   color: #333333;
 }
 
 .feature-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin: 0;
   list-style-type: none;
+}
+
+.feature-item-main {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgba(130, 179, 211, 1);
+}
+
+.feature-item {
+  width: 400px;
+  min-height: 384px;
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.feature-item:nth-child(even){
+background-color: rgba(131, 179, 211, 0.2);
+}
+
+.feature-item-wrapper {
+  width: 400px;
+  min-height: 384px;
+}
+
+.feature-image-wrapper {
+  width: 800px;
+  min-height: 384px;
+}
+
+.feature-foto {
+  display: block;
 }
 
 .reality-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin: 0;
+  background-color: #ffffff;
   list-style-type: none;
 }
 
+.reality-item {
+  width: 400px;
+  min-height: 384px;
+  background-color: rgba(255, 255, 255, 1);
+}
+.reality-item:nth-child(odd){
+ background-color: rgba(131, 179, 211, 0.12);
+
+}
+
 .item-name {
+  margin-top: 85px;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -170,7 +225,7 @@ body {
 }
 
 .item {
-  margin: 0;
+  margin: 30px auto;
   padding: 0;
   font-size: 18px;
   line-height: 21px;
@@ -304,9 +359,10 @@ body {
   list-style-type: none;
 }
 
-.footer-social-item {
-  min-width: 40px;
-  min-height: 40px;
+.button-social {
+  display: block;
+  width: 47px;
+  height: 40px;
 }
 
 .footer-contacts {
@@ -398,6 +454,20 @@ body {
   list-style-type: none;
 }
 
+.hotels-list {
+  flex-wrap: wrap;
+  margin: 56px 72px 66px;
+  padding: 0;
+}
+
+.catalog-hotels-card {
+  width: 340px;
+}
+
+.catalog-hotels-card:not(:nth-child(3n)) {
+  margin-right: 18px;
+}
+
 .control-buttons {
   display: flex;
 }
@@ -412,7 +482,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: end;
-}
 }
 
 .dayscount {
