@@ -146,7 +146,7 @@
       <section class="catalog-hotels">
         <div class="sorting-hotels">
           <div class="found-hotels-number">
-            <h2>Найдено гостиниц: 38</h2>
+            <h2 class="found">Найдено гостиниц: 38</h2>
           </div>
           <select class="select-control" aria-label="Сортировка">
             <option value="cheap">Сначала дешёвые</option>
@@ -168,15 +168,11 @@
                 alt="Amara Resort & Spa.">
               <h3 class="hotels-card-title">Amara Resort & Spa</h3>
             </a>
-            <div class="hotel">
+            <div class="card-content">
               <span class="hotels-title">Гостиница</span>
-              <a class="button more-detailed" href="#">подробнее</a>
-            </div>
-            <div class="favorites">
               <span class="price-hotels">От 4000 ₽</span>
+              <a class="button more-detailed" href="#">подробнее</a>
               <a class="button to-favorites" href="#">в избранное</a>
-            </div>
-            <div class="rating-hotels">
               <span class="visually-hidden">Звезды</span>
               <span class="rating-hotels-title">Рейтинг: 8,5</span>
             </div>
@@ -187,16 +183,12 @@
                 alt="Villas at Poco Diablo.">
               <h3 class="hotels-card-title">Villas at Poco Diablo</h3>
             </a>
-            <div class="hotel">
+            <div class="card-content">
               <span class="hotels-title">Гостиница</span>
-              <a class="button more-detailed" href="#">подробнее</a>
-            </div>
-            <div class="favorites">
               <span class="price-hotels">От 5000 ₽</span>
-              <a class="button to-favorites" href="#">в избранном</a>
-            </div>
-            <div class="rating-hotels">
-              <span class="visually-hidden">Звезды</span>
+              <a class="button more-detailed" href="#">подробнее</a>
+              <a class="button to-favorites selected" href="#">в избранном</a>
+              <span class="visually-hidden ">Звезды</span>
               <span class="rating-hotels-title">Рейтинг: 9,2</span>
             </div>
           </li>
@@ -206,15 +198,11 @@
                 alt="Desert Quail Inn.">
               <h3 class="hotels-card-title">Desert Quail Inn</h3>
             </a>
-            <div class="hotel">
+            <div class="card-content">
               <span class="hotels-title">Гостиница</span>
-              <a class="button more-detailed" href="#">подробнее</a>
-            </div>
-            <div class="favorites">
               <span class="price-hotels">От 2500 ₽</span>
+              <a class="button more-detailed" href="#">подробнее</a>
               <a class="button to-favorites" href="#">в избранное</a>
-            </div>
-            <div class="rating-hotels">
               <span class="visually-hidden">Звезды</span>
               <span class="rating-hotels-title">Рейтинг: 6,9</span>
             </div>
@@ -225,15 +213,11 @@
                 alt="GreenTree Inn.">
               <h3 class="hotels-card-title">GreenTree Inn</h3>
             </a>
-            <div class="hotel">
+            <div class="card-content">
               <span class="hotels-title">Гостиница</span>
-              <a class="button more-detailed" href="#">подробнее</a>
-            </div>
-            <div class="favorites">
               <span class="price-hotels">От 1500 ₽</span>
+              <a class="button more-detailed" href="#">подробнее</a>
               <a class="button to-favorites" href="#">в избранное</a>
-            </div>
-            <div class="rating-hotels">
               <span class="visually-hidden">Звезды</span>
               <span class="rating-hotels-title">Рейтинг: 5,0</span>
             </div>
@@ -275,8 +259,9 @@
         <p class="newsletter-text newsletter-text-catalog">
           Только полезная информация и никакого спама,<br> честное бойскаутское!
         </p>
-        <form  class="newsletter-form" action="https://echo.htmlacademy.ru" method="post">
-          <input class="newsletter-mail newsletter-mail-catalog" type="email" name="newsletter-email" id="newsletter-email" placeholder="Ваш e-mail" required>
+        <form class="newsletter-form" action="https://echo.htmlacademy.ru" method="post">
+          <input class="newsletter-mail newsletter-mail-catalog" type="email" name="newsletter-email"
+            id="newsletter-email" placeholder="Ваш e-mail" required>
           <button class="button newsletter-button" type="submit">Подписаться</button>
         </form>
       </section>
