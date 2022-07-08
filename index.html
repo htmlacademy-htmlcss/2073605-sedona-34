@@ -259,11 +259,16 @@
       </div>
     </footer>
   </div>
-  <div class="modal-container">
+  <div class="modal-container modal-container-close">
     <div class="modal-search">
       <section class="modal-content">
         <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
         <button class="modal-close-button">
+          <svg class="button-close" aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 13 13"
+            fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M13 1.2 11.8 0 6.5 5.3 1.2 0 0 1.2l5.3 5.3L0 11.8 1.2 13l5.3-5.3 5.3 5.3 1.2-1.2-5.3-5.3L13 1.2Z" />
+          </svg>
           <span class="visually-hidden">Закрыть</span>
         </button>
         <form class="date-form" action="#" method="post">
@@ -287,8 +292,8 @@
           </p>
           <div class="people">
             <p class="field-group">
-              <label class="form-name adults" for="arrival-date">Взрослые:</label>
-              <input class="field people-form-field" type="number" id="arrival-date" name="arrival-date"
+              <label class="form-name adults" for="adults-number">Взрослые:</label>
+              <input class="field people-form-field" type="number" id="adults-number" name="adults-number"
                 placeholder="1">
               <button class="button-modal-form minus-button">
                 <span class="visually-hidden">Минус</span>
@@ -299,20 +304,24 @@
             </p>
             <p class="field-group">
               <span class="form-label">
-                <label class="form-name children" for="departure-date">Дети:</label>
+                <label class="form-name children" for="children-number">Дети:</label>
                 <span class="tooltip">
                   <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
-                    <svg width="3" height="12" viewBox="0 0 3 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M.114 0h2v2h-2V0Zm2 12h-2V3h2v9Z" fill="#ffffff"/></svg>
+                    <svg width="3" height="12" viewBox="0 0 3 12" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M.114 0h2v2h-2V0Zm2 12h-2V3h2v9Z" fill;="none"
+                        fill="#ffffff" />
+                    </svg>
                   </button>
-                  <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с
+                    вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
                 </span>
               </span>
-              <input class="field people-form-field " type="number" id="departure-date" name="departure-date"
+              <input class="field people-form-field " type="number" id="children-number" name="children-number"
                 placeholder="1">
               <button class="button-modal-form minus-button">
                 <span class="visually-hidden">Минус</span>
               </button>
-              <button class="button-modal-form plus-button" type="button">
+              <button class="button-modal-form plus-button">
                 <span class="visually-hidden">Плюс</span>
               </button>
             </p>
