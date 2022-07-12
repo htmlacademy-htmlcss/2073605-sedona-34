@@ -92,6 +92,7 @@ body {
 }
 
 .navigation-user {
+  width: 264px;
   margin-left: auto;
 }
 
@@ -531,6 +532,7 @@ navigation-item-main {
 .footer-social-list {
   display: flex;
   flex-wrap: wrap;
+  width: 142px;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -562,11 +564,11 @@ navigation-item-main {
 }
 
 .footer-contacts {
+  width: 345px;
   margin: 0 auto;
 }
 
 .footer-contacts-phone {
-  width: 720px;
   font-size: 40px;
   line-height: 40px;
   text-transform: uppercase;
@@ -916,6 +918,7 @@ navigation-item-main {
 
 .breadcrumbs {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -995,6 +998,7 @@ navigation-item-main {
 }
 
 .catalog-filter-group {
+  width: 151px;
   margin: 0;
   padding: 0;
   border: 0;
@@ -1233,6 +1237,7 @@ navigation-item-main {
 .apply {
   padding: 14px 15px;
   width: 160px;
+  margin-bottom: 10px;
   border: 0;
   font-weight: 700;
   font-size: 16px;
@@ -1313,8 +1318,7 @@ navigation-item-main {
 .select-control {
   width: 290px;
   padding: 14px 20px;
-  margin-left: 191px;
-  margin-right: auto;
+  margin-left: auto;
   font-size: 18px;
   line-height: 21px;
   font: inherit;
@@ -1346,13 +1350,16 @@ navigation-item-main {
 
 .page-view-list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
+  margin-left: 78px;
   padding: 0;
   list-style-type: none;
 }
 
 .page-view-item:not(:last-child) {
   margin-right: 8px;
+  margin-bottom: 5px;
 }
 
 .button-view {
@@ -1536,8 +1543,28 @@ navigation-item-main {
   border-radius: 4px;
 }
 
+.number-pages {
+  display: flex;
+  position: relative;
+  margin: 0;
+  padding: 30px 71px 25px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.number-pages::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 1px;
+  width: 1055px;
+  background-color: #e6e6e6;
+}
+
 .pagination {
   display: flex;
+  flex-wrap: wrap;
+  width: 400px;
   padding: 0;
   list-style-type: none;
 }
@@ -1549,6 +1576,7 @@ navigation-item-main {
 .pagination-link {
   display: block;
   box-sizing: border-box;
+  margin-bottom: 5px;
   padding: 12px 20px;
   width: 60px;
   height: 60px;
@@ -1607,25 +1635,15 @@ navigation-item-main {
   background-color: #f2f2f2;
 }
 
-.number-pages {
+.number-hotels-of-pages {
+  width: 400px;
   display: flex;
-  position: relative;
   margin: 0;
-  padding: 30px 71px 25px;
-  align-items: center;
   justify-content: space-between;
 }
 
-.number-pages::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  height: 1px;
-  width: 1055px;
-  background-color: #e6e6e6;
-}
-
 .hotels-of-pages {
+  padding-top: 20px;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
