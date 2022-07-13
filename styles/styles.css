@@ -287,7 +287,7 @@ body {
 .feature-item-wrapper {
   width: 400px;
   min-height: 384px;
-  padding: 92px 75px;
+  padding: 92px 80px;
   box-sizing: border-box;
   color: #ffffff;
 }
@@ -420,22 +420,22 @@ body {
 }
 
 .subscription {
-  padding: 94px 200px;
+  padding: 97px 200px;
 }
 
 .subscription-main {
   background-color: #c0b0b0;
   background-image: url("../images/background-sudscription.jpg");
-  background-size: auto;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
 .newsletter {
   margin: 0;
-  margin-bottom: 29px;
+  margin-bottom: 37px;
   font-weight: 700;
   font-size: 30px;
-  line-height: 36px;
+  s line-height: 36px;
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
@@ -562,8 +562,8 @@ body {
 }
 
 .footer-contacts {
-  width: 345px;
-  padding-top: 8px;
+  width: 331px;
+  padding-top: 5px;
   margin: 0 auto;
 }
 
@@ -622,10 +622,10 @@ body {
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
 }
-
+/*
 .modal-container-close {
   display: none;
-}
+} */
 
 .modal-search {
   margin: auto;
@@ -922,7 +922,7 @@ body {
   color: #ffffff;
   background-color: #c0b0b0;
   background-image: url("../images/background-filter.jpg");
-  background-size: auto;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -1331,17 +1331,18 @@ body {
 
 .found {
   margin: 0;
-  margin-top: 8px;
+  margin-top: 11px;
   font-weight: 700;
+  font-family: "PT Sans", sans-serif;
   font-size: 30px;
   line-height: 36px;
-  letter-spacing: -2px;
 }
 
 .select-control {
   width: 290px;
   padding: 14px 20px;
   margin-left: auto;
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   border: 2px solid #e5e5e5;
@@ -1374,6 +1375,7 @@ body {
 .page-view-list {
   display: flex;
   flex-wrap: wrap;
+  width: 160px;
   margin: 0;
   margin-left: 78px;
   padding: 0;
@@ -1423,7 +1425,7 @@ body {
 .catalog-hotels-list {
   display: grid;
   grid-template-columns: repeat(3, 340px);
-  margin-top: 52px;
+  margin-top: 56px;
   padding: 0;
   column-gap: 18px;
   list-style-type: none;
