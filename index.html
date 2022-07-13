@@ -12,7 +12,7 @@
     <header class="main-header">
       <nav class="main-navigation">
         <section class="logo-sedona">
-          <h2 class="visually-hidden">Логотип Седоны.</h2>
+          <h1 class="visually-hidden">Логотип Седоны.</h1>
           <a class="logosedona" href="#">
             <img src="images/logo-sedona.svg" width="139" height="70" alt="Логотип сайта городка Седона.">
           </a>
@@ -60,7 +60,7 @@
     <main class="main-container main-index">
       <section class="sedona-town">
         <div class="main-image">
-          <h1 class="visually-hidden">Sedona.</h1>
+          <h2 class="visually-hidden">Sedona.</h2>
           <img class="logo" src="images/welcome.svg" width="458" height="352"
             alt="Добро пожаловать в великолепную Седону. Потому что Гранд каньон отстой.">
         </div>
@@ -78,7 +78,7 @@
           <li class="feature-item-main">
             <div class="feature-item-wrapper">
               <h2 class="item-name">
-                Настоящий городок
+                Настоящий<br> городок
               </h2>
               <p class="item">
                 — №1 —
@@ -96,7 +96,7 @@
                   Жильё
                 </h3>
                 <p class="reality-text">
-                  Рекомендуем пожить в настоящем мотеле, всё как в кино!
+                  Рекомендуем пожить<br> в настоящем мотеле, всё как в кино!
                 </p>
               </li>
               <li class="reality-item reality-food">
@@ -104,7 +104,7 @@
                   Еда
                 </h3>
                 <p class="reality-text">
-                  Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
+                  Всегда заказывайте<br> топовый фирменный бургер, вы не разочаруетесь!
                 </p>
               </li>
               <li class="reality-item reality-souvenir">
@@ -135,12 +135,12 @@
           </li>
           <li class="feature-item">
             <h2 class="item-name">
-              Небольшая площадь
+              Небольшая<br> площадь
             </h2>
             <p class="item">
               — №3 —
             </p>
-            <p class="item-text">
+            <p class="item-text text-comment">
               Все достопримечательности находятся очень близко
             </p>
           </li>
@@ -151,7 +151,7 @@
             <p class="item">
               — №4 —
             </p>
-            <p class="item-text">
+            <p class="item-text text-comment">
               Ехать в Седону из Лас-Вегаса совсем не скучно!
             </p>
           </li>
@@ -162,7 +162,7 @@
             <p class="item">
               — №5 —
             </p>
-            <p class="item-text">
+            <p class="item-text text-comment">
               Большинство едет в Гранд Каньон и толпится там
             </p>
           </li>
@@ -261,8 +261,8 @@
         <form class="date-form" action="#" method="post">
           <p class="field-group">
             <label class="form-name" for="arrival-date">Дата заезда:</label>
-            <input class="field date-form-field" type="text" id="arrival-date" name="arrival-date"
-              placeholder="Укажите дату">
+            <input class="field date-form-field" type="text" id="arrival-date" name="arrival-date" required
+              placeholder="Укажите дату" value="27 апреля 2020">
             <button class="button-modal-form calendar-button" type="button">
               <span class="visually-hidden">Календарь.</span>
             </button>
@@ -270,8 +270,8 @@
           </p>
           <p class="field-group">
             <label class="form-name" for="departure-date">Дата выезда:</label>
-            <input class="field date-form-field" type="text" id="departure-date" name="departure-date"
-              placeholder="Укажите дату">
+            <input class="field date-form-field" type="text" id="departure-date" name="departure-date" required
+              placeholder="Укажите дату" value="1 сентября 2021">
             <button class="button-modal-form calendar-button" type="button">
               <span class="visually-hidden">Календарь.</span>
             </button>
@@ -280,8 +280,8 @@
           <div class="people">
             <p class="field-group">
               <label class="form-name adults" for="adults-number">Взрослые:</label>
-              <input class="field people-form-field" type="number" id="adults-number" name="adults-number"
-                placeholder="1">
+              <input class="field people-form-field" type="text" id="adults-number" name="adults-number" required
+                placeholder="1" value="2">
               <button class="button-modal-form minus-button" type="button">
                 <span class="visually-hidden">Минус.</span>
               </button>
@@ -294,7 +294,7 @@
                 <label class="form-name children" for="children-number">Дети:</label>
                 <span class="tooltip">
                   <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
-                    <svg width="3" height="12" viewBox="0 0 3 12" xmlns="http://www.w3.org/2000/svg">
+                    <svg width="1" height="9" viewBox="0 0 1 9" xmlns="http://www.w3.org/2000/svg">
                       <path fill-rule="evenodd" clip-rule="evenodd" d="M.114 0h2v2h-2V0Zm2 12h-2V3h2v9Z"
                         fill="#ffffff" />
                     </svg>
@@ -303,8 +303,8 @@
                     вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
                 </span>
               </span>
-              <input class="field people-form-field " type="number" id="children-number" name="children-number"
-                placeholder="1">
+              <input class="field people-form-field " type="text" id="children-number" name="children-number" required
+                placeholder="1" value="1">
               <button class="button-modal-form minus-button" type="button">
                 <span class="visually-hidden">Минус.</span>
               </button>
