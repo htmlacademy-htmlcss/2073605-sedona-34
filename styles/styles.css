@@ -146,6 +146,7 @@ body {
 
 .button {
   border-radius: 4px;
+  overflow-wrap: break-word;
 }
 
 .button-want {
@@ -300,6 +301,8 @@ body {
 
 .feature-foto {
   display: block;
+  object-fit: cover;
+  height: 100%;
 }
 
 .reality-list {
@@ -433,7 +436,7 @@ body {
 
 .newsletter {
   margin: 0;
-  margin-bottom: 27px;
+  margin-bottom: 29px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -564,7 +567,7 @@ body {
 
 .footer-contacts {
   width: 331px;
-  padding-top: 5px;
+  padding-top: 7px;
   margin: 0 auto;
 }
 
