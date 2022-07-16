@@ -97,7 +97,7 @@ body {
 
 .navigation-item-main::before,
 .navigation-link-current::before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -1px;
   width: 82px;
@@ -908,7 +908,7 @@ body {
 }
 
 .tooltip-text::before {
-  content: '';
+  content: "";
   background-image: url("../images/tooltip-arrow.svg");
   width: 19px;
   height: 9px;
